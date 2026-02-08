@@ -164,7 +164,7 @@ export default function ProjectDetail({ setCurrentProjectId }) {
               <div className="bg-slate-700 p-4 rounded-lg border border-slate-600">
                 <p className="text-sm text-slate-300 mb-3">Vídeo Final Gerado</p>
                 <a
-                  href={`/api/projects/${id}/download`}
+                  href={`${import.meta.env.VITE_API_URL}/projects/${id}/download`}
                   download
                   className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
                 >
